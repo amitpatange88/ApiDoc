@@ -1,736 +1,703 @@
-<body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="green">
-  
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#parsing-api-project" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      <header class="md-header" data-md-component="header">
+
+<div data-md-component="skip">
+  <a href="#parsing-api-project" class="md-skip">
+    Skip to content
+  </a>
+</div>
+<div data-md-component="announce">
+
+</div>
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://docs.api-console.io" title="API Console Documentation" class="md-header-nav__button md-logo" aria-label="API Console Documentation">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+    <a href="https://docs.api-console.io" title="API Console Documentation" class="md-header-nav__button md-logo"
+      aria-label="API Console Documentation">
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z" />
+        </svg>
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" /></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
-            API Console Documentation
-          </span>
-          <span class="md-header-nav__topic md-ellipsis">
-            
-              Parsing API project
-            
-          </span>
-        </div>
-      
+
+      <div class="md-header-nav__ellipsis">
+        <span class="md-header-nav__topic md-ellipsis">
+          API Console Documentation
+        </span>
+        <span class="md-header-nav__topic md-ellipsis">
+
+          Parsing API project
+
+        </span>
+      </div>
+
     </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
+
+    <label class="md-header-nav__button md-icon" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z" />
+        </svg>
+    </label>
+
+    <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-search__overlay" for="__search"></label>
+      <div class="md-search__inner" role="search">
+        <form class="md-search__form" name="search">
+          <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search"
+            autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false"
+            data-md-component="search-query" data-md-state="active">
+          <label class="md-search__icon md-icon" for="__search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z" />
+              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z" /></svg>
+          </label>
+          <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset"
+            tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+              </svg>
+          </button>
+        </form>
+        <div class="md-search__output">
+          <div class="md-search__scrollwrap" data-md-scrollfix>
+            <div class="md-search-result" data-md-component="search-result">
+              <div class="md-search-result__meta">
+                Initializing search
+              </div>
+              <ol class="md-search-result__list"></ol>
+            </div>
           </div>
-          <ol class="md-search-result__list"></ol>
         </div>
       </div>
     </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header-nav__source">
-        
-<a href="https://github.com/mulesoft/api-console/" title="Go to repository" class="md-source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    mulesoft/api-console
-  </div>
-</a>
-      </div>
-    
+
+
+    <div class="md-header-nav__source">
+
+      <a href="https://github.com/mulesoft/api-console/" title="Go to repository" class="md-source">
+        <div class="md-source__icon md-icon">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z" />
+            </svg>
+        </div>
+        <div class="md-source__repository">
+          mulesoft/api-console
+        </div>
+      </a>
+    </div>
+
   </nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-        
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="https://docs.api-console.io" title="API Console Documentation" class="md-nav__button md-logo" aria-label="API Console Documentation">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
-    </a>
-    API Console Documentation
-  </label>
-  
-    <div class="md-nav__source">
-      
-<a href="https://github.com/mulesoft/api-console/" title="Go to repository" class="md-source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    mulesoft/api-console
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
+<div class="md-container" data-md-component="container">  
+    <main class="md-main" data-md-component="main">
+      <div class="md-main__inner md-grid">
+        <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                <label class="md-nav__title" for="__drawer">
+                <a href="https://docs.api-console.io" title="API Console Documentation" class="md-nav__button md-logo" aria-label="API Console Documentation">                     
 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
-  <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
+                </a>
+                API Console Documentation
+                </label>
 
-    
-      
-      
-      
+                <div class="md-nav__source">      
+                <a href="https://github.com/mulesoft/api-console/" title="Go to repository" class="md-source">
+                <div class="md-source__icon md-icon">
 
-
-  <li class="md-nav__item">
-    <a href="../../usage/" title="Usage" class="md-nav__link">
-      Usage
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../configuring-api-console/" title="Configuration" class="md-nav__link">
-      Configuration
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      Basic concepts
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Basic concepts" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Basic concepts
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../basics/web-components/" title="About web components" class="md-nav__link">
-      About web components
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../basics/embedding-api-console/" title="Embedding API Console" class="md-nav__link">
-      Embedding API Console
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../basics/cors/" title="CORS" class="md-nav__link">
-      CORS
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
-    
-    <label class="md-nav__link" for="nav-5">
-      Advanced topics
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Advanced topics" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Advanced topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Parsing API project
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Parsing API project" class="md-nav__link md-nav__link--active">
-      Parsing API project
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-the-parser-in-your-project" class="md-nav__link">
-    Using the parser in your project
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#processing-api-project" class="md-nav__link">
-    Processing API project
-  </a>
-  
-    <nav class="md-nav" aria-label="Processing API project">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parsing-the-api" class="md-nav__link">
-    Parsing the API
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validating-the-api" class="md-nav__link">
-    Validating the API
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-graph-model" class="md-nav__link">
-    Generating graph model
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../working-with-amf/" title="Working with AMF model" class="md-nav__link">
-      Working with AMF model
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../handling-events-in-component/" title="Handling DOM events" class="md-nav__link">
-      Handling DOM events
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../working-with-components/" title="Using API Components" class="md-nav__link">
-      Using API Components
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      Building
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Building" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Building
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../building/docker/" title="Docker and Kubernetes" class="md-nav__link">
-      Docker and Kubernetes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../building/rollup/" title="Rollup" class="md-nav__link">
-      Rollup
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../building/cli/" title="API Console CLI" class="md-nav__link">
-      API Console CLI
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
                 </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-the-parser-in-your-project" class="md-nav__link">
-    Using the parser in your project
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#processing-api-project" class="md-nav__link">
-    Processing API project
-  </a>
-  
-    <nav class="md-nav" aria-label="Processing API project">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parsing-the-api" class="md-nav__link">
-    Parsing the API
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validating-the-api" class="md-nav__link">
-    Validating the API
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generating-graph-model" class="md-nav__link">
-    Generating graph model
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
+                <div class="md-source__repository">
+                mulesoft/api-console
                 </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/mulesoft/api-console/edit/master/docs/advanced/parsing-amf.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  
-                
-                
-                <h1 id="parsing-api-project">Parsing API project<a class="headerlink" href="#parsing-api-project" title="Permanent link">¶</a></h1>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p>API Console works with a <a href="https://json-ld.org/">JSON-LD</a> (which means JSON for Linking Data) model generated by the <a href="https://github.com/aml-org/amf">AMF</a> parser. The model is a representation of a graph generated from the API project.</p>
-<p>At the moment AMF (and therefore API Console) can read the following API formats:</p>
-<ul>
-<li>RAML 0.8</li>
-<li>RAML 1.0</li>
-<li>OAS 2.0</li>
-<li>OAS 3.0</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Heads up</p>
-<p>OAS 3.0 support is in experimental phase and some language features may not
-be available at the moment. Feel free to open an issue report if you notice
-missing information.</p>
-</div>
-<h2 id="using-the-parser-in-your-project">Using the parser in your project<a class="headerlink" href="#using-the-parser-in-your-project" title="Permanent link">¶</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This section assumes you have Node installed on you machine and you have basic
-knowledge about JavaScript programming.</p>
-</div>
-<p>First, install parser as a dependency of your project.</p>
-<div class="codehilite"><pre><span></span><code>npm install --save amf-client-js
-</code></pre></div>
+                </a>
+                </div>
+
+                <ul class="md-nav__list" data-md-scrollfix>
+                <li class="md-nav__item">
+                <a href="../.." title="Introduction" class="md-nav__link">
+                Introduction
+                </a>
+                </li>
+                <li class="md-nav__item">
+                <a href="../../usage/" title="Usage" class="md-nav__link">
+                Usage
+                </a>
+                </li>
+                <li class="md-nav__item">
+                <a href="../../configuring-api-console/" title="Configuration" class="md-nav__link">
+                Configuration
+                </a>
+                </li>
+                <li class="md-nav__item md-nav__item--nested">
+
+                <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+
+                <label class="md-nav__link" for="nav-4">
+                Basic concepts
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+                </span>
+                </label>
+                <nav class="md-nav" aria-label="Basic concepts" data-md-level="1">
+                <label class="md-nav__title" for="nav-4">
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+                </span>
+                Basic concepts
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
 
 
-<p>Then, import the parser in your code:</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="nx">amf</span> <span class="nx">from</span> <span class="s1">'amf-client-js'</span><span class="p">;</span>
-</code></pre></div>
 
 
-<p>or Node's require</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">amf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'amf-client-js'</span><span class="p">);</span>
-</code></pre></div>
 
 
-<p>In the next step initialize the library:</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">amf</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">WebApi</span><span class="p">.</span><span class="nx">register</span><span class="p">();</span>
-<span class="nx">amf</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">Vocabularies</span><span class="p">.</span><span class="nx">register</span><span class="p">();</span>
-<span class="nx">amf</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="nx">features</span><span class="p">.</span><span class="nx">AMFValidation</span><span class="p">.</span><span class="nx">register</span><span class="p">();</span>
 
-<span class="nx">await</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
-</code></pre></div>
-
-
-<p>At this point the parser is ready to work.</p>
-<h2 id="processing-api-project">Processing API project<a class="headerlink" href="#processing-api-project" title="Permanent link">¶</a></h2>
-<h3 id="parsing-the-api">Parsing the API<a class="headerlink" href="#parsing-the-api" title="Permanent link">¶</a></h3>
-<p>To parse the API project we need the following:</p>
-<ul>
-<li>path to the API main file in format <code>file://FILE_LOCATION</code> or valid HTTP location to the API file</li>
-<li>API type, for example <code>RAML 1.0</code></li>
-<li>API specification media type, like <code>application/raml</code>, <code>application/yaml</code>, or <code>application/json</code></li>
-</ul>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">type</span> <span class="o">=</span> <span class="s1">'RAML 1.0'</span><span class="p">;</span>
-<span class="kr">const</span> <span class="nx">parser</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">parser</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="s1">'application/raml'</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">parser</span><span class="p">.</span><span class="nx">parseFileAsync</span><span class="p">(</span><span class="s1">'file://./api.raml'</span><span class="p">);</span>
-</code></pre></div>
+                <li class="md-nav__item">
+                <a href="../../basics/web-components/" title="About web components" class="md-nav__link">
+                About web components
+                </a>
+                </li>
 
 
-<p>The first argument of the <code>Core.parser()</code> function is the API type. This is one of the
-supported API formats listed at the beginning of this document.
-Second argument is the media type of the API. For RAML files it's always <code>application/raml</code>.
-However, Open API Specification comes with two flavours: <code>application/yaml</code> and <code>application/json</code>.</p>
-<p>The argument of <code>parseFileAsync()</code> is the location of the file to parse. It has to be
-a complete file location, including scheme. For local files use <code>file://</code> scheme. Relative
-paths are accepted. You can also pass a HTTP link to the API specification file.</p>
-<h3 id="validating-the-api">Validating the API<a class="headerlink" href="#validating-the-api" title="Permanent link">¶</a></h3>
-<p>It may seems to be unnecessary step but it may save you a lot of time if something
-is wrong with the API project. AMF will try to read as much as it can, even when
-the API is invalid. The invalid sections will be ignored.
-To avoid debugging and searching for solutions on StackOverflow, <strong>always validate the API</strong>.</p>
-<div class="codehilite"></div>
 
 
-<p>The <code>type</code> in the code snippet above is the same type as the first argument of calling <code>amf.Core.parser()</code> function.
-The <code>AMF.validate()</code> function takes the parsed document as the first argument and one of the validation profiles
-included info AMF library, under <code>amf.ProfileNames</code> property.</p>
-<p>Finally you can just print the validation result to the console to see warning/error messages, if any.</p>
-<h3 id="generating-graph-model">Generating graph model<a class="headerlink" href="#generating-graph-model" title="Permanent link">¶</a></h3>
-<p>API Console uses something we call a resolved model. A resolved model is the same
-graph model but RAML types are resolved to a canonical model. This means that if a type
-inherits from other types, it's all resolved to a final shape of an object.</p>
-<p>For this we are using a resolver for the "editing" pipeline. This is a special case
-created for API Console to generate the model it needs.</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">resolver</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">resolver</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">resolvedDoc</span> <span class="o">=</span> <span class="nx">resolver</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">doc</span><span class="p">,</span> <span class="s1">'editing'</span><span class="p">);</span>
-</code></pre></div>
 
 
-<p>As the last step, generate the model, as string, from the graph.</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">generator</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">generator</span><span class="p">(</span><span class="s1">'AMF Graph'</span><span class="p">,</span> <span class="s1">'application/ld+json'</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">opts</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">render</span><span class="p">.</span><span class="nx">RenderOptions</span><span class="p">().</span><span class="nx">withSourceMaps</span><span class="p">.</span><span class="nx">withCompactUris</span><span class="p">;</span>
-<span class="kr">const</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">generateString</span><span class="p">(</span><span class="nx">resolvedDoc</span><span class="p">,</span> <span class="nx">opts</span><span class="p">);</span>
-</code></pre></div>
+
+                <li class="md-nav__item">
+                <a href="../../basics/embedding-api-console/" title="Embedding API Console" class="md-nav__link">
+                Embedding API Console
+                </a>
+                </li>
 
 
-<p>The <code>model</code> property has the AMF model the API Console can consume. You should store it somehow and then pass it to the console, when needed.</p>
-                
-              
-              
-                
 
 
-              
-            </article>
+
+
+
+                <li class="md-nav__item">
+                <a href="../../basics/cors/" title="CORS" class="md-nav__link">
+                CORS
+                </a>
+                </li>
+
+
+                </ul>
+                </nav>
+                </li>
+
+
+
+
+
+
+
+
+
+                <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+
+                <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+
+                <label class="md-nav__link" for="nav-5">
+                Advanced topics
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+                </span>
+                </label>
+                <nav class="md-nav" aria-label="Advanced topics" data-md-level="1">
+                <label class="md-nav__title" for="nav-5">
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+                </span>
+                Advanced topics
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+
+
+                <li class="md-nav__item md-nav__item--active">
+
+                <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+
+
+
+
+                <label class="md-nav__link md-nav__link--active" for="__toc">
+                Parsing API project
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+                </span>
+                </label>
+
+                <a href="./" title="Parsing API project" class="md-nav__link md-nav__link--active">
+                Parsing API project
+                </a>
+
+
+                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+
+
+
+
+                <label class="md-nav__title" for="__toc">
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+                </span>
+                Table of contents
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+
+                <li class="md-nav__item">
+                <a href="#introduction" class="md-nav__link">
+                Introduction
+                </a>
+
+                </li>
+
+                <li class="md-nav__item">
+                <a href="#using-the-parser-in-your-project" class="md-nav__link">
+                Using the parser in your project
+                </a>
+
+                </li>
+
+                <li class="md-nav__item">
+                <a href="#processing-api-project" class="md-nav__link">
+                Processing API project
+                </a>
+
+                <nav class="md-nav" aria-label="Processing API project">
+                <ul class="md-nav__list">
+
+                <li class="md-nav__item">
+                <a href="#parsing-the-api" class="md-nav__link">
+                Parsing the API
+                </a>
+
+                </li>
+
+                <li class="md-nav__item">
+                <a [routerLink]="['./']" fragment="validating-the-api" class="md-nav__link">
+                Validating the API
+                </a>
+
+                </li>
+
+                <li class="md-nav__item">
+                <a href="#generating-graph-model" class="md-nav__link">
+                Generating graph model
+                </a>
+
+                </li>
+
+                </ul>
+                </nav>
+
+                </li>
+
+                </ul>
+
+                </nav>
+
+                </li>
+
+
+
+
+
+
+
+                <li class="md-nav__item">
+                <a href="../working-with-amf/" title="Working with AMF model" class="md-nav__link">
+                Working with AMF model
+                </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="md-nav__item">
+                <a href="../handling-events-in-component/" title="Handling DOM events" class="md-nav__link">
+                Handling DOM events
+                </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="md-nav__item">
+                <a href="../working-with-components/" title="Using API Components" class="md-nav__link">
+                Using API Components
+                </a>
+                </li>
+
+
+                </ul>
+                </nav>
+                </li>
+
+
+
+
+
+
+
+                <li class="md-nav__item md-nav__item--nested">
+
+                <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+
+                <label class="md-nav__link" for="nav-6">
+                Building
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+                </span>
+                </label>
+                <nav class="md-nav" aria-label="Building" data-md-level="1">
+                <label class="md-nav__title" for="nav-6">
+                <span class="md-nav__icon md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+                </span>
+                Building
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+
+
+
+
+
+
+
+                <li class="md-nav__item">
+                <a href="../../building/docker/" title="Docker and Kubernetes" class="md-nav__link">
+                Docker and Kubernetes
+                </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="md-nav__item">
+                <a href="../../building/rollup/" title="Rollup" class="md-nav__link">
+                Rollup
+                </a>
+                </li>
+
+
+
+
+
+
+
+                <li class="md-nav__item">
+                <a href="../../building/cli/" title="API Console CLI" class="md-nav__link">
+                API Console CLI
+                </a>
+                </li>
+
+
+                </ul>
+                </nav>
+                </li>
+
+
+                </ul>
+                </nav>
+            </div>
           </div>
         </div>
-      </main>
-      
-        
-<footer class="md-footer">
-  
-    <div class="md-footer-nav">
+
+        <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                  <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                  <label class="md-nav__title" for="__toc">
+                  <span class="md-nav__icon md-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+                  </span>
+                  Table of contents
+                  </label>
+                  <ul class="md-nav__list" data-md-scrollfix>
+
+                  <li class="md-nav__item">
+                  <a [routerLink]="['./']" fragment="introduction" class="md-nav__link">
+                  Introduction
+                  </a>
+
+                  </li>
+
+                  <li class="md-nav__item">
+                  <a [routerLink]="['./']" fragment="using-the-parser-in-your-project" class="md-nav__link">
+                  Using the parser in your project
+                  </a>
+
+                  </li>
+
+                  <li class="md-nav__item">
+                  <a [routerLink]="['./']" fragment="processing-api-project" class="md-nav__link">
+                  Processing API project
+                  </a>
+
+                  <nav class="md-nav" aria-label="Processing API project">
+                  <ul class="md-nav__list">
+
+                  <li class="md-nav__item">
+                  <a [routerLink]="['./']" fragment="parsing-the-api" class="md-nav__link">
+                  Parsing the API
+                  </a>
+
+                  </li>
+
+                  <li class="md-nav__item">
+                  <a [routerLink]="['./']" fragment="validating-the-api" class="md-nav__link">
+                  Validating the API
+                  </a>
+
+                  </li>
+
+                  <li class="md-nav__item">
+                  <a [routerLink]="['./']" fragment="generating-graph-model" class="md-nav__link">
+                  Generating graph model
+                  </a>
+
+                  </li>
+
+                  </ul>
+                  </nav>
+
+                  </li>
+
+                  </ul>
+
+                  </nav>
+              </div>
+            </div>
+        </div>
+
+        <div class="md-content">
+          <article class="md-content__inner md-typeset">
+              <a href="https://github.com/mulesoft/api-console/edit/master/docs/advanced/parsing-amf.md" title="Edit this page" class="md-content__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+              </a>
+              <h1 id="parsing-api-project">Parsing API project<a class="headerlink" href="#parsing-api-project" title="Permanent link">¶</a></h1>
+              <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+              <p>API Console works with a <a href="https://json-ld.org/">JSON-LD</a> (which means JSON for Linking Data) model generated by the <a href="https://github.com/aml-org/amf">AMF</a> parser. The model is a representation of a graph generated from the API project.</p>
+              <p>At the moment AMF (and therefore API Console) can read the following API formats:</p>
+              <ul>
+                <li>RAML 0.8</li>
+                <li>RAML 1.0</li>
+                <li>OAS 2.0</li>
+                <li>OAS 3.0</li>
+              </ul>
+              <div class="admonition warning">
+                <p class="admonition-title">Heads up</p>
+                <p>OAS 3.0 support is in experimental phase and some language features may not
+                be available at the moment. Feel free to open an issue report if you notice
+                missing information.</p>
+              </div>
+              <h2 id="using-the-parser-in-your-project">Using the parser in your project<a class="headerlink" href="#using-the-parser-in-your-project" title="Permanent link">¶</a></h2>
+              <div class="admonition info">
+                <p class="admonition-title">Info</p>
+                <p>This section assumes you have Node installed on you machine and you have basic
+                knowledge about JavaScript programming.</p>
+              </div>
+
+              <p>First, install parser as a dependency of your project.</p>
+              <div class="codehilite"><pre><span></span><code>npm install --save amf-client-js
+                </code></pre>
+              </div>
+
+              <p>Then, import the parser in your code:</p>
+              <div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="nx">amf</span> <span class="nx">from</span> <span class="s1">'amf-client-js'</span><span class="p">;</span>
+                </code></pre>
+              </div>
+
+              <p>or Node's require</p>
+              <div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">amf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'amf-client-js'</span><span class="p">);</span>
+                </code></pre>
+              </div>
+
+              <p>In the next step initialize the library:</p>
+              <div class="codehilite"><pre><span></span><code><span class="nx">amf</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">WebApi</span><span class="p">.</span><span class="nx">register</span><span class="p">();</span>
+              <span class="nx">amf</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">Vocabularies</span><span class="p">.</span><span class="nx">register</span><span class="p">();</span>
+              <span class="nx">amf</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="nx">features</span><span class="p">.</span><span class="nx">AMFValidation</span><span class="p">.</span><span class="nx">register</span><span class="p">();</span>
+
+              <span class="nx">await</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+              </code></pre></div>
+
+              <p>At this point the parser is ready to work.</p>
+              <h2 id="processing-api-project">Processing API project<a class="headerlink" href="#processing-api-project" title="Permanent link">¶</a></h2>
+              <h3 id="parsing-the-api">Parsing the API<a class="headerlink" href="#parsing-the-api" title="Permanent link">¶</a></h3>
+              <p>To parse the API project we need the following:</p>
+
+              <ul>
+                <li>path to the API main file in format <code>file://FILE_LOCATION</code> or valid HTTP location to the API file</li>
+                <li>API type, for example <code>RAML 1.0</code></li>
+                <li>API specification media type, like <code>application/raml</code>, <code>application/yaml</code>, or <code>application/json</code></li>
+              </ul>
+
+              <div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">type</span> <span class="o">=</span> <span class="s1">'RAML 1.0'</span><span class="p">;</span>
+                <span class="kr">const</span> <span class="nx">parser</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">parser</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="s1">'application/raml'</span><span class="p">);</span>
+                <span class="kr">const</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">parser</span><span class="p">.</span><span class="nx">parseFileAsync</span><span class="p">(</span><span class="s1">'file://./api.raml'</span><span class="p">);</span>
+                </code></pre>
+              </div>
+
+              <p>The first argument of the <code>Core.parser()</code> function is the API type. This is one of the
+                supported API formats listed at the beginning of this document.
+                Second argument is the media type of the API. For RAML files it's always <code>application/raml</code>.
+                However, Open API Specification comes with two flavours: <code>application/yaml</code> and <code>application/json</code>.
+              </p>
+              <p>The argument of <code>parseFileAsync()</code> is the location of the file to parse. It has to be
+                a complete file location, including scheme. For local files use <code>file://</code> scheme. Relative
+                paths are accepted. You can also pass a HTTP link to the API specification file.
+              </p>
+
+              <h3 id="validating-the-api">Validating the API<a class="headerlink" href="#validating-the-api" title="Permanent link">¶</a></h3>
+              <p>It may seems to be unnecessary step but it may save you a lot of time if something
+              is wrong with the API project. AMF will try to read as much as it can, even when
+              the API is invalid. The invalid sections will be ignored.
+              To avoid debugging and searching for solutions on StackOverflow, <strong>always validate the API</strong>.
+              </p>
+
+              <p>The <code>type</code> in the code snippet above is the same type as the first argument of calling <code>amf.Core.parser()</code> function.
+              The <code>AMF.validate()</code> function takes the parsed document as the first argument and one of the validation profiles
+              included info AMF library, under <code>amf.ProfileNames</code> property.</p>
+              <p>Finally you can just print the validation result to the console to see warning/error messages, if any.</p>
+              <h3 id="generating-graph-model">Generating graph model<a class="headerlink" href="#generating-graph-model" title="Permanent link">¶</a></h3>
+              <p>API Console uses something we call a resolved model. A resolved model is the same
+              graph model but RAML types are resolved to a canonical model. This means that if a type
+              inherits from other types, it's all resolved to a final shape of an object.</p>
+              <p>For this we are using a resolver for the "editing" pipeline. This is a special case
+              created for API Console to generate the model it needs.</p>
+              <div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">resolver</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">resolver</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span>
+              <span class="kr">const</span> <span class="nx">resolvedDoc</span> <span class="o">=</span> <span class="nx">resolver</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">doc</span><span class="p">,</span> <span class="s1">'editing'</span><span class="p">);</span>
+              </code></pre></div>
+
+              <p>As the last step, generate the model, as string, from the graph.</p>
+              <div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">generator</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">Core</span><span class="p">.</span><span class="nx">generator</span><span class="p">(</span><span class="s1">'AMF Graph'</span><span class="p">,</span> <span class="s1">'application/ld+json'</span><span class="p">);</span>
+              <span class="kr">const</span> <span class="nx">opts</span> <span class="o">=</span> <span class="nx">amf</span><span class="p">.</span><span class="nx">render</span><span class="p">.</span><span class="nx">RenderOptions</span><span class="p">().</span><span class="nx">withSourceMaps</span><span class="p">.</span><span class="nx">withCompactUris</span><span class="p">;</span>
+              <span class="kr">const</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">generateString</span><span class="p">(</span><span class="nx">resolvedDoc</span><span class="p">,</span> <span class="nx">opts</span><span class="p">);</span>
+              </code></pre></div>
+              
+              <p>The <code>model</code> property has the AMF model the API Console can consume. You should store it somehow and then pass it to the console, when needed.</p>
+
+          </article>
+        </div>
+      </div>
+    </main>  
+
+    <footer class="md-footer">
+
+      <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../../basics/cors/" title="CORS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                CORS
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../working-with-amf/" title="Working with AMF model" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Working with AMF model
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
+      
+      <a href="../../basics/cors/" title="CORS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+      <div class="md-footer-nav__button md-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </div>
+      <div class="md-footer-nav__title">
+      <div class="md-ellipsis">
+      <span class="md-footer-nav__direction">
+      Previous
+      </span>
+      CORS
+      </div>
+      </div>
+      </a>
+      
+      
+      <a href="../working-with-amf/" title="Working with AMF model" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+      <div class="md-footer-nav__title">
+      <div class="md-ellipsis">
+      <span class="md-footer-nav__direction">
+      Next
+      </span>
+      Working with AMF model
+      </div>
+      </div>
+      <div class="md-footer-nav__button md-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+      </div>
+      </a>
+      
       </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            © 2019 MuleSoft, a Salesforce company
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
       </div>
       
-  <div class="md-footer-social">
-    
+      <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+      
+      <div class="md-footer-copyright__highlight">
+      © 2019 MuleSoft, a Salesforce company
+      </div>
+      
+      Made with
+      <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+      </a>
+      </div>
+      
+      <div class="md-footer-social">
       
       
-        
-        
+      
+      
+      
       
       <a href="https://github.com/mulesoft/api-console" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
       </a>
-    
-  </div>
-
-    </div>
-  </div>
-</footer>
       
-    </div>
-  </body>
+      </div>
+      
+      </div>
+      </div>
+    </footer>
+
+</div>
+<script src="https://docs.api-console.io/assets/javascripts/vendor.d710d30a.min.js"></script>
+<script src="https://docs.api-console.io/assets/javascripts/bundle.5f27aba8.min.js"></script>
+<script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script>
+  app = initialize({
+  base: "../..",
+  features: [],
+  search: Object.assign({
+  worker: "https://docs.api-console.io/assets/javascripts/worker/search.27c6a5e6.min.js"
+  }, typeof search !== "undefined" && search)
+  })
+</script>
